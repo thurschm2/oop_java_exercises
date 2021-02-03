@@ -1,5 +1,11 @@
 package com.techreturners.cats;
 
 interface Cat {
-    public  boolean isAsleep ();
+
+    boolean isAsleep();
+    boolean goToSleep();
+    boolean wakeUp();
+    String getSetting();
+
+    int getAverageHeight();
 }

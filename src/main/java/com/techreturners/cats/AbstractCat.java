@@ -1,7 +1,31 @@
 package com.techreturners.cats;
 
-public abstract class AbstractCat implements Cat {
-    public abstract boolean isAsleep ();
+abstract class AbstractCat implements Cat {
 
+    private boolean isSleeping = false;
+//    private String catSetting;
+//    public int height;
+
+    protected AbstractCat() {
+    }
+
+    public boolean isAsleep () {
+        return isSleeping;
+    }
+
+    public boolean goToSleep() {
+        isSleeping = true;
+        return isSleeping;
+    }
+    public boolean wakeUp() {
+        isSleeping = false;
+        return isSleeping;
+    }
+    public String getSetting() {
+        return catSetting;
+    }
+    public int getAverageHeight() {
+        return height;
+    }
 }
 
