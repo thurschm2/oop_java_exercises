@@ -54,13 +54,13 @@ public class CatTest {
 
     @Test
     public void feedTheCheetah() {
-        Cat cheetahCat = new CheetahCat();
+        Cat cheetahCat = new cheetahCat();
         assertEquals("Zzzzzzz", cheetahCat.eat());
     }
-//
-//    @Test
-//    public void feedTheCat() {
-//        Cat domesticCat = new DomesticCat();
-//        assertEquals("Purrrrrrr", domesticCat.eat());
-//    }
+
+    @Test
+    public void feedTheCat() {
+        Cat domesticCat = new DomesticCat();
+        assertEquals("Purrrrrrr", domesticCat.eat());
+    }
 }
